@@ -69,6 +69,7 @@ type RocketServiceServer interface {
 	GetRocket(context.Context, *GetRocketRequest) (*GetRocketResponse, error)
 	AddRocket(context.Context, *AddRocketRequest) (*AddRocketResponse, error)
 	DeleteRocket(context.Context, *DeleteRocketRequest) (*DeleteRocketResponse, error)
+	mustEmbedUnimplementedRocketServiceServer()
 }
 
 // UnimplementedRocketServiceServer must be embedded to have forward compatible implementations.
